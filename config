@@ -1,0 +1,5 @@
+have=NGX_TRAFFIC_STATUS . auto/have
+
+ngx_addon_name=ngx_http_traffic_analysis_module
+HTTP_AUX_FILTER_MODULES="$HTTP_AUX_FILTER_MODULES ngx_http_traffic_analysis_module"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_http_traffic_analysis_module.c"
